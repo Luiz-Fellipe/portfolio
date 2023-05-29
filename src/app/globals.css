@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:is(button, a):focus-visible {
+  outline-offset: theme('spacing[1]');
+  outline: 2px solid theme('colors.G100');
+}
